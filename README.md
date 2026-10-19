@@ -1,6 +1,6 @@
 # SDR++ for Arch Linux ARM with RTL-SDR
 
-This is a small Arch Linux ARM (`aarch64`) variant of the maintained [AUR `sdrpp-git` recipe](https://aur.archlinux.org/packages/sdrpp-git). It builds SDR++ with the RTL-SDR source and PortAudio output. Other hardware source modules that require additional libraries are disabled. SDR++ itself already provides [aarch64 Debian nightlies](https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly); this recipe packages it for Arch Linux ARM.
+This is an unofficial Arch Linux ARM (`aarch64`) package recipe that builds SDR++ from its upstream source with the RTL-SDR source and PortAudio output. Other hardware source modules that require additional libraries are disabled. SDR++ also provides [aarch64 Debian nightlies](https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly); this recipe packages it for Arch Linux ARM.
 
 ## Install
 
@@ -16,6 +16,6 @@ The package depends on `rtl-sdr`, which installs the driver library and udev rul
 
 ## Scope
 
-This recipe was built on an ARM64 Omarchy system using Arch Linux ARM packages. The package builds successfully, but reception requires a connected RTL-SDR dongle. The AUR already has a maintained `sdrpp-git` package, so this recipe is hosted here for ARM64 users and as a proposed change to its maintainer. [AUR submission rules](https://wiki.archlinux.org/title/AUR_submission_guidelines) prohibit duplicate packages.
+This recipe was built and tested with an RTL-SDR dongle on an ARM64 Omarchy system using Arch Linux ARM packages. The upstream [SDR++ installation instructions](https://github.com/AlexandreRouma/SDRPlusPlus/blob/master/readme.md#arch-based) recommend building from source on Arch-based systems and explicitly do not recommend the `sdrpp-git` AUR package. This recipe builds from upstream source and is independent of that AUR package. It was originally adapted from its packaging script, with attribution in the PKGBUILD. [AUR submission rules](https://wiki.archlinux.org/title/AUR_submission_guidelines) prohibit duplicate packages and ARM-only submissions, so this recipe is hosted on GitHub.
 
 The packaging files in this repository are licensed under MIT. SDR++ itself is licensed under GPL-3.0-only.
