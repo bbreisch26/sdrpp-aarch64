@@ -18,4 +18,4 @@ The package depends on `rtl-sdr`, which installs the driver library and udev rul
 
 This recipe was built on an ARM64 Omarchy system using Arch Linux ARM packages. The package builds successfully, but reception requires a connected RTL-SDR dongle. The AUR already has a maintained `sdrpp-git` package, so this recipe is hosted here for ARM64 users and as a proposed change to its maintainer. [AUR submission rules](https://wiki.archlinux.org/title/AUR_submission_guidelines) prohibit duplicate packages.
 
-The packaging files in this repository are licensed under 0BSD. SDR++ itself is licensed under GPL-3.0-only.
+The packaging files in this repository are licensed under MIT. SDR++ itself is licensed under GPL-3.0-only.
