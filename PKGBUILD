@@ -1,6 +1,4 @@
 # Maintainer: Ben Breisch <ben.breisch@gmail.com>
-# Arch Linux ARM build based on the AUR sdrpp-git recipe.
-# Original AUR maintainers: Alexandre Rouma and éclairevoyant.
 
 _pkgname=sdrpp
 pkgname="$_pkgname-git"
