@@ -1,0 +1,4 @@
+/src/
+/pkg/
+/sdrpp/
+*.pkg.tar.*
