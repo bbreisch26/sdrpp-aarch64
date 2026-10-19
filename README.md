@@ -1,6 +1,6 @@
 # SDR++ for Arch Linux ARM
 
-This is an unofficial Arch Linux ARM (`aarch64`) package recipe that builds SDR++ from its upstream source. It enables the modules in the [SDR++ README release list](https://github.com/AlexandreRouma/SDRPlusPlus/blob/master/readme.md#module-list) whose dependencies are available in Arch Linux ARM repositories. SDR++ also provides [aarch64 Debian nightlies](https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly); this recipe packages it for Arch Linux ARM.
+This is an unofficial Arch Linux ARM (`aarch64`) package recipe that builds SDR++ from its upstream source. It enables the modules in the [SDR++ README release list](https://github.com/AlexandreRouma/SDRPlusPlus/blob/master/readme.md#module-list) whose dependencies are available in Arch Linux ARM repositories and work on this Cortex-A72 machine. SDR++ also provides [aarch64 Debian nightlies](https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly); this recipe packages it for Arch Linux ARM.
 
 ## Install
 
@@ -20,7 +20,8 @@ The table compares the modules marked **Built in Release** in SDR++'s README wit
 
 | Module group | SDR++ README release | This package |
 | --- | --- | --- |
-| Airspy, bladeRF, HackRF, LimeSDR, PlutoSDR, RTL-SDR sources | Built | Built using Arch Linux ARM libraries |
+| Airspy, bladeRF, HackRF, PlutoSDR, RTL-SDR sources | Built | Built using Arch Linux ARM libraries |
+| LimeSDR source | Built | Omitted: Arch Linux ARM `limesuite` 23.11.0-9 crashes on this Cortex-A72 with an unsupported ARMv8.3 instruction during device discovery |
 | Airspy HF+, FobosSDR, Perseus, RFNM, SDRplay sources | Built | Omitted: required libraries are not in the Arch Linux ARM repositories |
 | Audio, file, Hermes, network, RFspace, RTL-TCP, SDR++ server, Spectran HTTP, SpyServer sources | Built | Built |
 | RtAudio sink, network sink, new PortAudio sink | Built | Built |

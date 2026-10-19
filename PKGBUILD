@@ -5,12 +5,12 @@
 _pkgname=sdrpp
 pkgname="$_pkgname-git"
 pkgver=1.0.4.r886.8c9f5ee8
-pkgrel=3
+pkgrel=4
 pkgdesc="SDR++ with release modules available on Arch Linux ARM"
 arch=(aarch64)
 url="https://github.com/AlexandreRouma/SDRPlusPlus"
 license=(GPL-3.0-only)
-depends=(airspy bladerf codec2 fftw glew glfw hackrf libad9361 libiio libvolk limesuite portaudio rtaudio rtl-sdr zstd)
+depends=(airspy bladerf codec2 fftw glew glfw hackrf libad9361 libiio libvolk portaudio rtaudio rtl-sdr zstd)
 makedepends=(cmake git)
 provides=("$_pkgname")
 conflicts=("$_pkgname")
@@ -32,7 +32,7 @@ build() {
 		-DOPT_BUILD_DISCORD_PRESENCE=ON \
 		-DOPT_BUILD_FOBOSSDR_SOURCE=OFF \
 		-DOPT_BUILD_HACKRF_SOURCE=ON \
-		-DOPT_BUILD_LIMESDR_SOURCE=ON \
+		-DOPT_BUILD_LIMESDR_SOURCE=OFF \
 		-DOPT_BUILD_M17_DECODER=ON \
 		-DOPT_BUILD_PERSEUS_SOURCE=OFF \
 		-DOPT_BUILD_PLUTOSDR_SOURCE=ON \
