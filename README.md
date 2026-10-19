@@ -12,7 +12,7 @@ cd sdrpp-rtl-aarch64
 makepkg -si
 ```
 
-The package depends on `rtl-sdr`, which installs the driver library and udev rules. Plug in the dongle, then check it with `rtl_test -t`. Start the app with `sdrpp`, choose **RTL-SDR** as the source, and select the PortAudio sink for sound.
+The package depends on `rtl-sdr`, which installs the driver library and udev rules. Plug in the dongle, then check it with `rtl_test -t`. Start the app with `sdrpp`, choose **RTL-SDR** as the source, and choose **Audio Sink** for sound (provided by PortAudio).
 
 ## Scope
 

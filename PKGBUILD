@@ -5,7 +5,7 @@
 _pkgname=sdrpp
 pkgname="$_pkgname-git"
 pkgver=1.0.4.r886.8c9f5ee8
-pkgrel=1
+pkgrel=2
 pkgdesc="SDR++ with RTL-SDR and PortAudio support for Arch Linux ARM"
 arch=(aarch64)
 url="https://github.com/AlexandreRouma/SDRPlusPlus"
@@ -31,7 +31,8 @@ build() {
 		-DOPT_BUILD_PLUTOSDR_SOURCE=OFF \
 		-DOPT_BUILD_DISCORD_PRESENCE=OFF \
 		-DOPT_BUILD_RTL_SDR_SOURCE=ON \
-		-DOPT_BUILD_NEW_PORTAUDIO_SINK=ON \
+		-DOPT_BUILD_NEW_PORTAUDIO_SINK=OFF \
+		-DOPT_BUILD_PORTAUDIO_SINK=ON \
 		-DCMAKE_POLICY_VERSION_MINIMUM=3.5
 	make -C build
 }

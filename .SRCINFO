@@ -1,7 +1,7 @@
 pkgbase = sdrpp-git
 	pkgdesc = SDR++ with RTL-SDR and PortAudio support for Arch Linux ARM
 	pkgver = 1.0.4.r886.8c9f5ee8
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/AlexandreRouma/SDRPlusPlus
 	arch = aarch64
 	license = GPL-3.0-only
